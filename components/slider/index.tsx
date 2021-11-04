@@ -28,13 +28,13 @@ export default function Slide () {
     >
       <SwiperSlide>
         <Container>
-        <Link href='/'>
+            <Link href='#'>
             <a>
-            <Image 
-              src={slide1}
-            />
+              <Image 
+                src={slide1}
+              />
             </a>
-          </Link>
+            </Link>
         </Container>
       </SwiperSlide>
       <SwiperSlide>

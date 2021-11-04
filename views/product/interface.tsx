@@ -7,6 +7,7 @@ export interface Product {
     description: string;
     price: number;
     image: any;
+    benefit: any;
 }
 
 export interface ProductProps {

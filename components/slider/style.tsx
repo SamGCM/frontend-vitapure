@@ -7,8 +7,14 @@ export const Container = styled.div`
     overflow: hidden;
     position: relative;
 
+    a {
+        letter-spacing: 0;
+        word-spacing: 0;
+        font-size: 0;
+    }
+
     @media (max-width: 800px) {
-    height: auto;
+        height: auto;
     }
 `
 

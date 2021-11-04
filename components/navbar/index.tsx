@@ -1,10 +1,9 @@
-import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import {  MenuIcon, XIcon } from '@heroicons/react/outline'
-import {useRouter} from "next/router";
+import router, {useRouter} from "next/router";
 import Link from 'next/link'
 
-import Logo from '../../public/assets/images/Logo.svg'
+import Logo from '../../public/assets/images/logo.svg'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -12,32 +11,32 @@ function classNames(...classes) {
 
 export default function Navbar() {
 
-    const {pathname, push, locale, isReady} = useRouter()
+    const {pathname, push, locale, isReady, asPath} = useRouter()
 
     const navigation = [
         {
-            name: 'Nossos suplementos',
+            name: 'Início',
             component: '',
             href: '/',
-            current: pathname === "/"
+            current: asPath === "/"
         },
         {
-            name: 'Para energia',
+            name: 'Energia',
             component: '',
-            href: '/',
-            current: pathname === "/energia"
+            href: '/categories/energia',
+            current: asPath === "/categories/energia"
         },
         {
-            name: 'Para força',
+            name: 'Força',
             component: '',
-            href: '/',
-            current: pathname === "/força"
+            href: '/categories/forca',
+            current: asPath === "/categories/forca"
         },
         {
-            name: 'Para treinos',
+            name: 'Treino',
             component: '',
-            href: '/',
-            current: pathname === "/treinos"
+            href: '/categories/treino',
+            current: asPath === "/categories/treino"
         },
     ]
 
@@ -48,12 +47,12 @@ export default function Navbar() {
           <>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex items-center justify-between h-16">
-                <div className="flex items-center">
-                  <div className="flex-shrink-0">
+                <div className="flex items-center w-auto">
+                  <div className="flex-shrink-0 w-auto">
                     <Link href='/'>
                       <a>
                         <img
-                          className="h-12 w-100"
+                          className="h-11 w-100"
                           src={Logo.src}
                           alt="Workflow"
                         />
@@ -70,7 +69,7 @@ export default function Navbar() {
                               item.current
                                 ? 'bg-gray-900 text-white'
                                 : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'px-3 py-2 rounded-md text-sm font-medium'
+                              'px-3 py-2 rounded-md text-md font-medium '
                             )}
                             aria-current={item.current ? 'page' : undefined}
                           >
