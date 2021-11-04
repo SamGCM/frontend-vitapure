@@ -31,7 +31,7 @@ const ProductPage = ({category}: CategoriesProps) => {
           >
             <a>
               <Image 
-                src={`http://localhost:1337` +  item.image[0].url}
+                src={`https://vitapure.herokuapp.com/` +  item.image[0].url}
                 width={270}
                 height={270}
                 alt={item.image.alternativeText}
@@ -45,7 +45,7 @@ const ProductPage = ({category}: CategoriesProps) => {
                 </Quantity>
               </ContainerTitle>
               <Description>
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                {item.description}
               </Description>
             </a>
           </Link>
@@ -82,7 +82,7 @@ const ProductPage = ({category}: CategoriesProps) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const res = await fetch('http://localhost:1337/categories');
+  const res = await fetch('https://vitapure.herokuapp.com/categories');
   const data = await res.json();
 
   const paths = data.map((categories) => ({
@@ -99,12 +99,12 @@ export const getStaticProps: GetStaticProps = async ({params}) =>{
   const { slug } = params
   
   const res = await fetch(
-    `http://localhost:1337/categories?slug=${slug}`
+    `https://vitapure.herokuapp.com/categories?slug=${slug}`
     ) // https://vitapure.herokuapp.com/
     const data = await res.json()
     const category = data[0]
     
-    console.log(`----------------`, category)
+    // console.log(`----------------`, category)
   return{
     props: {category},
   }

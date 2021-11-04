@@ -50,7 +50,7 @@ const ProductPage = ({product}: ProductProps) => {
           </div>
           <div>
             <Image className='product'
-            src={`http://localhost:1337` + proceeds.image[0].url}
+            src={`https://vitapure.herokuapp.com` + proceeds.image[0].url}
             width={400}
             height={400}
             alt={proceeds.image.alternativeText}
@@ -93,7 +93,7 @@ const ProductPage = ({product}: ProductProps) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const res = await fetch('http://localhost:1337/products');
+  const res = await fetch('https://vitapure.herokuapp.com/products');
   const data = await res.json();
 
   const paths = data.map((product) => ({
@@ -109,7 +109,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({params}) =>{
   const { slug } = params
   const res = await fetch(
-    `http://localhost:1337/products?slug=${slug}`
+    `https://vitapure.herokuapp.com/products?slug=${slug}`
     ) // https://vitapure.herokuapp.com/
   const data = await res.json()
   const product = data[0]
