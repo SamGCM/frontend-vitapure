@@ -31,7 +31,7 @@ const ProductPage = ({category}: CategoriesProps) => {
           >
             <a>
               <Image 
-                src={`https://vitapure.herokuapp.com/` +  item.image[0].url}
+                src={`https://vitapure.herokuapp.com` + item.image[0].url}
                 width={270}
                 height={270}
                 alt={item.image.alternativeText}
