@@ -34,7 +34,7 @@ export const Card = styled.div `
     @media (max-width: 638px) {
         width: 215px;
         margin: 0;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         box-shadow: none;
         border-radius: 10px;
     }
