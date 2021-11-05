@@ -27,9 +27,18 @@ const benefits = {
     text: "Melhora cardio",
     icon: Heart
   },
-  muscle: Muscle,
-  protection: Protection,
-  exercise: Exercise,
+  muscle: {
+    text: "Mais energia",
+    icon: Muscle,
+  },
+  protection: {
+    text: "Mais energia",
+    icon: Protection,
+  },
+  exercise: {
+    text: "Mais energia",
+    icon: Exercise,
+  },
 }
 
 const ProductPage = ({product}: ProductProps) => {
