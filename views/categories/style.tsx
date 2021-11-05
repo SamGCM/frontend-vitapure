@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     margin-bottom: 37.5px;
+    min-height: 71vh;
 `
 
 export const ContainerProducts = styled.div`
@@ -32,7 +33,7 @@ export const Card = styled.div `
     background: #fff;
 
     @media (max-width: 638px) {
-        width: 215px;
+        width: 180px;
         margin: 0;
         margin-bottom: 30px;
         box-shadow: none;
