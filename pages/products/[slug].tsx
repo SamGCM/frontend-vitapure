@@ -28,15 +28,15 @@ const benefits = {
     icon: Heart
   },
   muscle: {
-    text: "Mais energia",
+    text: "Mais força",
     icon: Muscle,
   },
   protection: {
-    text: "Mais energia",
+    text: "Mais proteção",
     icon: Protection,
   },
   exercise: {
-    text: "Mais energia",
+    text: "Mais disposição",
     icon: Exercise,
   },
 }
@@ -48,7 +48,7 @@ const ProductPage = ({product}: ProductProps) => {
     <>
       <Navbar/>
         <ProductContainer>
-          <div>
+          <div className='container-info'>
             <Title>{proceeds.name}</Title>
             <Description>{proceeds.description}</Description>
             <Link href={`${proceeds.link}`}>

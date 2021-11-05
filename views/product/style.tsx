@@ -67,6 +67,14 @@ export const ProductContainer = styled.div`
         z-index: 2;
     }
 
+    @media (max-width:1000px){
+        .circles {
+            position: absolute;
+            transform: translate(-20px,-350px);
+            width: 350px;    
+        }
+    }
+
     @media (max-width: 800px) {
         height: auto;
         flex-wrap: wrap-reverse;
@@ -98,8 +106,6 @@ export const ProductContainer = styled.div`
 export const Title = styled.h1`
     font: small-caps bold 48px/1 sans-serif;
     margin: 20px 0;
-
-    
 `
 
 export const Description = styled.p`
