@@ -32,7 +32,7 @@ export const Card = styled.div `
     background: #fff;
 
     @media (max-width: 638px) {
-        width: 45vw;
+        width: 215px;
         margin: 0;
         margin-bottom: 10px;
         box-shadow: none;
@@ -42,6 +42,7 @@ export const Card = styled.div `
 
 export const ContainerTitle = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
     padding: 5px 15px;
@@ -51,7 +52,7 @@ export const TitleProduct = styled.h2 `
     font: bold 24px system-ui, sans-serif;
 
     @media (max-width: 638px) {
-        font: bold 20px system-ui, sans-serif;
+        font: bold 18px system-ui, sans-serif;
     }
 `
 

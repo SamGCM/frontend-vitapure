@@ -44,9 +44,9 @@ const ProductPage = ({category}: CategoriesProps) => {
                   {item.quantity}
                 </Quantity>
               </ContainerTitle>
-              <Description>
+              {/* <Description>
                 {item.description}
-              </Description>
+              </Description> */}
             </a>
           </Link>
           <ContainerPrice>

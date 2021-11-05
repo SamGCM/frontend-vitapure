@@ -74,16 +74,6 @@ const ProductPage = ({product}: ProductProps) => {
                 </div>
               )
             })}
-            {proceeds.benefit?.map((item) => {
-              return (
-                <div className='flex flex-col items-center justify-center'>
-                  <div className='containerIcon mb-5'>
-                    <img className='m-0 p-0' src={benefits[item].icon.src} />
-                  </div>
-                  <SubLegend>{benefits[item].text}</SubLegend>
-                </div>
-              )
-            })}
           </ContainerBenefits>
         </Container>
         
