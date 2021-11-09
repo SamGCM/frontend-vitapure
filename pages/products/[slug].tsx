@@ -44,6 +44,8 @@ const benefits = {
 const ProductPage = ({product}: ProductProps) => {
   const proceeds = product
 
+  // console.log(proceeds.image)
+
   return (
     <>
       <Navbar/>
@@ -59,7 +61,7 @@ const ProductPage = ({product}: ProductProps) => {
           </div>
           <div>
             <Image className='product'
-            src={`https://vitapure.herokuapp.com` + proceeds.image[0].url}
+            src={`https://vitapure.herokuapp.com` + proceeds.image}
             width={400}
             height={400}
             alt={proceeds.image.alternativeText}

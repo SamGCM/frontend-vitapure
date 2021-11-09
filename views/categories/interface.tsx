@@ -1,6 +1,6 @@
 export interface Category{
     id: number;
-    name_category: string;
+    name: string;
     slug: string;
     products: any;
 }

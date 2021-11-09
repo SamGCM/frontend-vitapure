@@ -21,6 +21,7 @@ import { Product } from "../../views/product/interface";
 const ProductPage = ({category}: CategoriesProps) => {
 
   const router = useRouter()
+  // console.log(category)
 
   const generateCards = () => {
     return category.products.map((item: Product) => {
@@ -31,7 +32,7 @@ const ProductPage = ({category}: CategoriesProps) => {
           >
             <a>
               <Image 
-                src={`https://vitapure.herokuapp.com` + item.image[0].url}
+                src={`https://vitapure.herokuapp.com` + item.image}
                 width={270}
                 height={270}
                 alt={item.image.alternativeText}
@@ -71,7 +72,7 @@ const ProductPage = ({category}: CategoriesProps) => {
     <>
       <Navbar/>
       <Container>
-        <TitlePage>Para {category.name_category}</TitlePage>
+        <TitlePage>Para {category.name}</TitlePage>
         <ContainerProducts>
           {generateCards()}
         </ContainerProducts>

@@ -10,6 +10,7 @@ import {Container, Title, Button} from './style'
 import energy from '../../public/assets/images/energy.jpg'
 import force from '../../public/assets/images/force.jpg'
 import train from '../../public/assets/images/train.jpg'
+import Header from "../../components/header"
 
 
 
@@ -17,6 +18,7 @@ const Dashboard = () => {
 
   return (
     <>
+        <Header title='Vita Pure - Suplementos'/>
         <Navbar/>
             <Slide/>
             <Container>
