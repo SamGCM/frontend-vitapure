@@ -39,7 +39,7 @@ const ProductPage = ({category}: CategoriesProps) => {
               />
               <ContainerTitle>
                 <TitleProduct>
-                  {item.name}
+                  {item.title}
                 </TitleProduct>
                 <Quantity>
                   {item.quantity}

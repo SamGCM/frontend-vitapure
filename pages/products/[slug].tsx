@@ -51,7 +51,7 @@ const ProductPage = ({product}: ProductProps) => {
       <Navbar/>
         <ProductContainer>
           <div className='container-info'>
-            <Title>{proceeds.name}</Title>
+            <Title>{proceeds.title}</Title>
             <Description>{proceeds.description}</Description>
             <Link href={`${proceeds.link}`}>
               <a>

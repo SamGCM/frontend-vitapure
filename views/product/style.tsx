@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: linear-gradient(to top, #a8e063, #7CBA32); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top, #7bcf13, #7CBA32); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     flex-direction: column;
     padding: 50px;
@@ -12,6 +12,7 @@ export const Container = styled.div`
     @media (max-width: 800px) {
     height: auto;
     }
+    
 `
 
 export const ContainerBenefits = styled.div`
@@ -111,6 +112,7 @@ export const Title = styled.h1`
 export const Description = styled.p`
     font: 18px normal arial, sans-serif;
     margin: 10px 0;
+    max-width: 500px;
 `
 
 export const Button = styled.button`
