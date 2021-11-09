@@ -61,7 +61,7 @@ const ProductPage = ({product}: ProductProps) => {
           </div>
           <div>
             <Image className='product'
-            src={`https://vitapure.herokuapp.com` + proceeds.image}
+            src={proceeds.image}
             width={400}
             height={400}
             alt={proceeds.image.alternativeText}
